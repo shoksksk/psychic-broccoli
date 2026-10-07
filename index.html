@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCIT Tech Fest 2026 | Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="brand">
+      <img class="logo" src="GCIT_logo.png" alt="GCIT logo">
+      <span class="site-title">GCIT Tech Fest 2026</span>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#details">Date &amp; Venue</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <h1>GCIT Tech Fest 2026</h1>
+      <p class="tagline">One day of hacking, talks and demos for GCIT students.</p>
+      <img class="banner" src="banner.svg" alt="GCIT Tech Fest 2026 banner">
+    </section>
+
+    <section id="about" class="content-block">
+      <h2>About the event</h2>
+      <p>
+        GCIT Tech Fest brings students from every programme together for a day of
+        building and learning. You can join a 6-hour mini hackathon, attend short
+        talks from industry guests, and show your projects at the demo corner.
+        Beginners are welcome &ndash; no prior hackathon experience is needed.
+      </p>
+    </section>
+
+    <section id="details" class="content-block">
+      <h2>Date and venue</h2>
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Date</h3>
+          <p>Saturday, 14 November 2026</p>
+          <p>9:00 AM to 4:30 PM</p>
+        </article>
+        <article class="info-card">
+          <h3>Venue</h3>
+          <p>GCIT Auditorium</p>
+          <p>Gyalpozhing, Kabesa
+          </p>
+        </article>
+        <article class="info-card">
+          <h3>Register by</h3>
+          <p>Friday, 7 November 2026</p>
+          <p>Entry is free</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="content-block">
+      <h2>Event schedule</h2>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Session</th>
+            <th scope="col">Where</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00 AM</td>
+            <td>Check-in and welcome</td>
+            <td>Auditorium foyer</td>
+          </tr>
+          <tr>
+            <td>9:30 AM</td>
+            <td>Opening talk: Building with the web today</td>
+            <td>Auditorium</td>
+          </tr>
+          <tr>
+            <td>10:30 AM</td>
+            <td>Mini hackathon begins</td>
+            <td>Computer labs</td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td>Lunch break</td>
+            <td>Canteen</td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td>Project demos and judging</td>
+            <td>Auditorium</td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td>Prizes and closing</td>
+            <td>Auditorium</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="register" class="content-block">
+      <h2>Register for the event</h2>
+      <p class="form-note">Fields marked with <span class="required-mark">*</span> are required.</p>
+
+      <form id="registration-form" action="#" method="post">
+
+        <fieldset>
+          <legend>Your details</legend>
+
+          <div class="form-row">
+            <label for="full-name">Full name <span class="required-mark">*</span></label>
+            <input type="text" id="full-name" name="full_name" placeholder="e.g. Ashok Ghimeray" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address <span class="required-mark">*</span></label>
+            <input type="email" id="email" name="email" placeholder="gcit@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Contact number <span class="required-mark">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="17123456"
+                   pattern="(17|77)[0-9]{6}" title="Enter an 8-digit number starting with 17 or 77" required>
+          </div>
+
+          <div class="form-row">
+            <label for="dob">Date of birth <span class="required-mark">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+
+          <div class="form-row">
+            <span class="field-label" id="gender-label">Gender <span class="required-mark">*</span></span>
+            <div class="option-group" role="radiogroup" aria-labelledby="gender-label">
+              <label class="option"><input type="radio" name="gender" value="female" required> Female</label>
+              <label class="option"><input type="radio" name="gender" value="male"> Male</label>
+              <label class="option"><input type="radio" name="gender" value="other"> Prefer not to say</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your participation</legend>
+
+          <div class="form-row">
+            <label for="programme">Programme / department <span class="required-mark">*</span></label>
+            <select id="programme" name="programme" required>
+              <option value="">Select your programme</option>
+              <option value="it">Information Technology</option>
+              <option value="se">Software Engineering</option>
+              <option value="ds">Computet Science</option>
+              <option value="cs">Cyber Security</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="year">Year of study <span class="required-mark">*</span></label>
+            <select id="year" name="year" required>
+              <option value="">Select your year</option>
+              <option value="1">First year</option>
+              <option value="2">Second year</option>
+              <option value="3">Third year</option>
+              <option value="4">Fourth year</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <span class="field-label" id="interest-label">Areas of interest</span>
+            <div class="option-group" role="group" aria-labelledby="interest-label">
+              <label class="option"><input type="checkbox" name="interest" value="web"> Web development</label>
+              <label class="option"><input type="checkbox" name="interest" value="ai"> AI and data</label>
+              <label class="option"><input type="checkbox" name="interest" value="security"> Cyber security</label>
+              <label class="option"><input type="checkbox" name="interest" value="mobile"> Mobile apps</label>
+              <label class="option"><input type="checkbox" name="interest" value="design"> UI design</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="remarks">Additional message / remarks</label>
+            <textarea id="remarks" name="remarks" rows="4"
+                      placeholder="Tell us about any special requirements or questions"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="button-row">
+          <input type="submit" class="btn btn-primary" value="Register now">
+          <input type="reset" class="btn btn-secondary" value="Clear form">
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="site-footer">
+    <p>Gyalpozhing College of Information Technology &copy; 2026</p>
+    <p>Questions? Write to techfest@gamil.edu.bt</p>
+  </footer>
+
+</body>
+</html>
